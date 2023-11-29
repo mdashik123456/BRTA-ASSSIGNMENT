@@ -29,12 +29,12 @@ session_start();
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.php">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="form.php">Form</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.php"><?php if (!isset($_SESSION["email"])){
-                        echo "Login";
-                    }else{
-                        echo "Dashboard";
-                    }
-                    ?></a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.php"><?php if (!isset($_SESSION["email"])) {
+                                                                                    echo "Login";
+                                                                                } else {
+                                                                                    echo "Dashboard";
+                                                                                }
+                                                                                ?></a></li>
                 </ul>
             </div>
         </div>
@@ -85,14 +85,24 @@ session_start();
                             prescribed form along with related papers and fees. An applicant not being a foreign
                             national must be able to read and write either Bengali or English. Successful candidate of
                             the driving test have to submit application in the prescribed form to the licensing
-                            authority along with the related papers &amp; fees.</span><br><br>Professional- BDT 1438/-
-                        and Non-professional- BDT 2300/-</p>
+                            authority along with the related papers &amp; fees.</span><br><br><strong><i>Professional- BDT 1438/-
+                        and Non-professional- BDT 2300/- </i></strong></p>
                 </div>
                 <div class="col-md-12 col-lg-5"><img width="358" height="286" src="assets/img/BRTA_licence_specimen.jpg" style="width: 331px;"></div>
             </div>
         </div>
     </section><!-- Start: footer -->
-    <main class="page lanidng-page">
+
+    <section>
+        <div style="text-align: center;">
+            <h3>Location</h3>
+        </div>
+        <div style="text-align: center;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d138939.67376280783!2d90.43090426763715!3d23.78092929290169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbrta!5e0!3m2!1sen!2sbd!4v1701258809329!5m2!1sen!2sbd" width="50%" height="50%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer class="page lanidng-page">
         <section class="portfolio-block skills" style="background: #dedede;color: rgb(255,255,255);">
             <div class="container">
                 <div class="row">
@@ -132,7 +142,7 @@ session_start();
                 </div>
             </div>
         </section>
-    </main><!-- End: footer -->
+    </footer><!-- End: footer -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/pikaday.min.js"></script>
